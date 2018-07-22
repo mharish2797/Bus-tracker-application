@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="\nChoose Source and Destination\n"
+        android:textAlignment="center"
+        android:id="@+id/csrcdst"
+        android:textColor="#ff6600"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Source:"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#ff6600"
+        android:id="@+id/csrc" />
+
+    <Spinner
+        android:id="@+id/cspinsrc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Destination:"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#ff6600"
+        android:id="@+id/cdst" />
+
+    <Spinner
+        android:id="@+id/cspindst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideInset"
+        />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:text="Schedule"
+        android:theme="@style/MyButton"
+        android:textColor="#ff6600"
+        android:textStyle="bold"
+        android:shadowColor="#ff6600"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cschedule"
+         />
+</LinearLayout>

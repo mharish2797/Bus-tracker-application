@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="#ff6600"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|top"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="\nAVAILABLE BUSES\n"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/textView"
+                android:layout_gravity="left|top" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                card_view:cardBackgroundColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="50dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="30dp"
+                    android:id="@+id/disp"
+                    android:textStyle="bold"
+                    android:textColor="#ff6600"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
+

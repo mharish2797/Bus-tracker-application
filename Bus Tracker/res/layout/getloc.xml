@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="\n\nThe bus number and your location will be sent to Cloud as a dynamic point of existence of the bus at this instant."
+        android:textAlignment="center"
+        android:textColor="#001bb3"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:id="@+id/info" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/busnum"
+        android:hint="Bus number"
+        android:textColor="#ff6600"
+        android:textColorHint="#001bb3"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/upload"
+
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:theme="@style/MyButton"
+        android:textColor="#ff6600"
+        android:textStyle="bold"
+        android:shadowColor="#ff6600"
+        android:layout_gravity="center_horizontal"
+        android:text="Send content"
+        android:id="@+id/sendcontent"
+         />
+
+    <Button
+        android:text="Seed Data"
+        android:id="@+id/conductor"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:theme="@style/MyButton"
+        android:textColor="#ff6600"
+        android:textStyle="bold"
+        android:shadowColor="#ff6600"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:text="Terminate Data Seed "
+        android:id="@+id/stopcon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:theme="@style/MyButton"
+        android:textColor="#ff6600"
+        android:textStyle="bold"
+        android:shadowColor="#ff6600"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+</ScrollView>
